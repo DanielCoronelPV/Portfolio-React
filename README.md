@@ -1,73 +1,132 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚀 Modern Portfolio | Daniel Coronel
 
-Currently, two official plugins are available:
+A professional, high-performance personal portfolio built with **React, TypeScript, and Vite**. This project showcases my journey as a Full Stack Developer, highlighting my projects, skills, and professional experience with a modern and interactive UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📄 About Me
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I'm **Daniel Coronel**, a Full Stack Developer from Paraguay 🇵🇾. I specialize in building scalable, user-centric web applications. This portfolio represents my transition to a more robust tech stack, focusing on performance, internationalization (i18n), and advanced UI/UX patterns.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📌 Key Improvements
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Moving from my previous Angular portfolio, this new version includes:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Tech Stack Migration:** From Angular to React + Vite for faster build times and better developer experience.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Enhanced UI:** Implementation of Framer Motion for smooth animations and a 3D animated background.
+
+- **Internationalization:** Full support for multiple languages (English/Spanish) using i18next.
+
+- **Modern Styling:** Built with Tailwind CSS and Shadcn UI for a clean, consistent design.
+
+---
+
+## 🛠 Technologies used
+
+- **React 18** (Frontend Library)
+
+- **TypeScript** (Static Typing)
+
+- **Vite** (Build Tool)
+
+- **Tailwind CSS** (Utility-first Styling)
+
+- **Framer Motion** (Animations)
+
+- **Lucide React** (Icons)
+
+- **i18next** (Internationalization)
+
+- **Vercel** (Hosting & Deployment)
+
+---
+
+## ✨ Features
+
+- **Responsive Design:** Fully optimized for all screen sizes.
+
+- **Dark/Light Mode:** Integrated theme provider for better user experience.
+
+- **Animated Components:** Interactive 3D cube background and smooth scroll transitions.
+
+- **Multi-language Support:** Easily toggle between Spanish and English.
+
+- **Contact Integration:** Functional contact modal for direct inquiries.
+
+---
+
+## 🌐 Live Demo
+
+Check out the live site here:
+👉 [danielcoronel.vercel.app](https://danielcoronel.vercel.app)
+
+---
+
+## 📸 Preview
+![Portfolio Screenshot](src/assets/portfolioReact.webp)
+
+---
+
+## 🚀 How to Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/DanielCoronelPV/new-portfolio.git
+
+# Navigate into the project folder
+cd new-portfolio
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+
+# The app will be available at
+http://localhost:5173/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Structure
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+PORTFOLIO-REACT/
+├── public/                # Archivos públicos estáticos (robots, logos, etc.)
+├── src/                   # Código fuente principal
+│   ├── assets/            # Recursos visuales organizados por sección
+│   │   ├── experiences/   # Imágenes de experiencia laboral
+│   │   ├── fonts/         # Fuentes personalizadas
+│   │   ├── projects/      # Capturas de proyectos
+│   │   ├── skills/        # Iconos de tecnologías
+│   │   ├── sliders/       # Imágenes para carruseles
+│   │   └── profile-animated.webp
+│   ├── components/        # Componentes de la interfaz
+│   │   ├── ui/            # Componentes base y de Shadcn
+│   │   ├── About.tsx
+│   │   ├── AnimatedCubeBackground.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Projects.tsx
+│   │   └── ...            # Otros componentes (Hero, Navigation, Skills, etc.)
+│   ├── config/            # Configuraciones globales
+│   ├── hooks/             # Custom Hooks de React
+│   ├── i18n/              # Configuración de traducciones (i18next)
+│   ├── lib/               # Funciones de utilidad (utils.ts)
+│   ├── pages/             # Vistas de alto nivel
+│   │   ├── Index.tsx      # Página principal
+│   │   └── NotFound.tsx   # Página de error 404
+│   ├── App.tsx            # Componente raíz
+│   ├── App.css            # Estilos globales de la aplicación
+│   ├── main.tsx           # Punto de entrada de la aplicación
+│   └── index.css          # Estilos base de Tailwind
+├── .env.local             # Variables de entorno
+├── components.json        # Configuración de Shadcn UI
+├── package.json           # Dependencias y scripts
+├── tailwind.config.ts     # Configuración de Tailwind CSS
+├── vite.config.ts         # Configuración de Vite
+└── README.md
 ```
