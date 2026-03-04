@@ -4,6 +4,11 @@ import { useEffect, useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { SectionTitle } from "./SectionTitle";
 
+import viviendapro from "@/assets/projects/proj-viviendapro.webp";
+import alamweb from "@/assets/projects/proj-almaweb.webp";
+import aeroymarina from "@/assets/projects/proj-aeroymarina.webp";
+import precisapp from "@/assets/projects/proj-precisapp.webp";
+
 export const Projects = () => {
   const { t } = useTranslation();
   const [activeProject, setActiveProject] = useState(0);
@@ -20,7 +25,7 @@ export const Projects = () => {
         t("projects.tag3-p1"),
         t("projects.tag4-p1"),
       ],
-      image: "src/assets/projects/viviendapro.png",
+      image: viviendapro,
       demoUrl: "https://vivienda.pro/",
       githubUrl: "https://github.com/pedrojcaceresl/vivienda-pro-back",
     },
@@ -35,7 +40,7 @@ export const Projects = () => {
         t("projects.tag4-p2"),
         t("projects.tag5-p2"),
       ],
-      image: "src/assets/projects/almaweb.png",
+      image: alamweb,
       demoUrl: "https://drrsystemas.com.ar/",
       githubUrl: "https://github.com/LuisSalvarezza/AlmaWeb",
     },
@@ -51,7 +56,7 @@ export const Projects = () => {
         t("projects.tag5-p3"),
         t("projects.tag6-p3"),
       ],
-      image: "src/assets/projects/aeroymarina.webp",
+      image: aeroymarina,
       demoUrl: null,
       githubUrl: null,
     },
@@ -65,7 +70,7 @@ export const Projects = () => {
         t("projects.tag3-p4"),
         t("projects.tag4-p4"),
       ],
-      image: "src/assets/projects/precisapp.webp",
+      image: precisapp,
       demoUrl: null,
       githubUrl: null,
     },

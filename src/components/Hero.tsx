@@ -2,6 +2,7 @@
 
 import { useTranslation } from "react-i18next";
 import { TabletSmartphone, Monitor } from "lucide-react";
+import profileAnimated from "@/assets/profile-animated.webp";
 
 export const Hero = () => {
   const { t } = useTranslation();
@@ -111,7 +112,7 @@ export const Hero = () => {
             style={{ animationDelay: "0.1s" }}
           >
             <img
-              src="/src/assets/Profile-animated.png"
+              src={profileAnimated}
               alt="Profile-animated"
               className="w-[350px] object-cover"
             />

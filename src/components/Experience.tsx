@@ -4,6 +4,10 @@ import { SectionTitle } from "./SectionTitle";
 import { AnimatedCubeBackground } from "./AnimatedCubeBackground";
 import { useTranslation } from "react-i18next";
 
+import drrSystemas from "@/assets/experiences/exp-drrsystemas.webp";
+import cowatercraft from "@/assets/experiences/exp-cowatercraft.webp";
+import paraqvaria from "@/assets/experiences/exp-paraqvaria.webp";
+
 export const Experience = () => {
   const { t } = useTranslation();
 
@@ -28,7 +32,7 @@ export const Experience = () => {
     },
     {
       role: t("experience.head2"),
-      img: "src/assets/drrsystemas.png",
+      img: drrSystemas,
       company: "DRR Systemas",
       url: "https://drrsystemas.github.io/drr-page/",
       period: "2025 - Present",
@@ -45,7 +49,7 @@ export const Experience = () => {
     },
     {
       role: t("experience.head3"),
-      img: "src/assets/cowatercraft.png",
+      img: cowatercraft,
       company: "Co Watercraft",
       url: "https://www.cowatercraft.com/",
       period: "2025",
@@ -61,7 +65,7 @@ export const Experience = () => {
     },
     {
       role: t("experience.head4"),
-      img: "src/assets/paraqvaria.png",
+      img: paraqvaria,
       company: "Paraqvaria Broker y Servicios S.A.",
       url: "https://www.paraqvaria.com.py/",
       period: "2023 - 2024",
@@ -142,7 +146,7 @@ export const Experience = () => {
 
             {/* Animated Circle Indicator */}
             <div
-              className="absolute md:left-[0.3rem] w-6 h-6 rounded-full bg-[url('/src/assets/profile-animated.png')] bg-cover shadow-[0_0_20px_hsl(189_94%_55%_/_0.5)] block transition-all duration-300 ease-out z-10"
+              className="absolute md:left-[0.3rem] w-6 h-6 rounded-full bg-[url('/src/assets/profile-animated.webp')] bg-cover shadow-[0_0_20px_hsl(189_94%_55%_/_0.5)] block transition-all duration-300 ease-out z-10"
               style={{ top: `${circlePosition}%` }}
             >
               <div className="absolute inset-0 rounded-full bg-card animate-ping opacity-75" />

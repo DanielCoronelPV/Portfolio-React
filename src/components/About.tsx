@@ -4,10 +4,10 @@ import { SectionTitle } from "./SectionTitle";
 
 import { EffectCoverflow, Autoplay } from "swiper/modules";
 
-import heroPlay from "@/assets/hero-play.png";
-import heroCode from "@/assets/hero-code.jpeg";
-import heroDogs from "@/assets/hero-dogs.jpeg";
-import heroTravel from "@/assets/hero-travel.jpeg";
+import sliderPlay from "@/assets/sliders/slider-play.webp";
+import sliderCode from "@/assets/sliders/slider-code.webp";
+import sliderDogs from "@/assets/sliders/slider-dogs.webp";
+import sliderTravel from "@/assets/sliders/slider-travel.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -66,10 +66,10 @@ export const About = () => {
                 className="w-full max-w-xl pb-5"
               >
                 {[
-                  { img: heroPlay, title: "I Play" },
-                  { img: heroCode, title: "I Code" },
-                  { img: heroTravel, title: "I Travel" },
-                  { img: heroDogs, title: "Love Dogs" },
+                  { img: sliderPlay, title: "I Play" },
+                  { img: sliderCode, title: "I Code" },
+                  { img: sliderTravel, title: "I Travel" },
+                  { img: sliderDogs, title: "Love Dogs" },
                 ].map((item, index) => (
                   <SwiperSlide key={index} className="w-[60%]">
                     <div className="relative">
